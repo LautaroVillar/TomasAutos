@@ -36,8 +36,8 @@ nav ul li{
 .nav-menu:hover{
     background-color: #4c4646 ;
     transition: 0.2s;
-    box-shadow: 2px 2px black;
-    transform: scale(2);
+    box-shadow: 3px 3px black;
+    transform: scale(3);
 }
 #contenedor{
     display: grid;
@@ -114,8 +114,8 @@ footer{
     .nav-menu:hover{
         background-color: #4c4646 ;
         transition: 0.2s;
-        box-shadow: 2px 2px black;
-        transform: scale(2);
+        box-shadow: 3px 3px black;
+        transform: scale(3);
     }
     .portada{
         height: 32rem;
