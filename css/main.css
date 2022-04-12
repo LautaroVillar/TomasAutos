@@ -34,7 +34,10 @@ nav ul li{
     text-decoration: none;
 }
 .nav-menu:hover{
-    background-color: rgb(76, 70, 70) ;
+    background-color: #4c4646 ;
+    transition: 0.2s;
+    box-shadow: 2px 2px black;
+    transform: scale(2);
 }
 #contenedor{
     display: grid;
@@ -107,6 +110,12 @@ footer{
     nav ul li{
         margin: 1rem;
         font-size: 16px;
+    }
+    .nav-menu:hover{
+        background-color: #4c4646 ;
+        transition: 0.2s;
+        box-shadow: 2px 2px black;
+        transform: scale(2);
     }
     .portada{
         height: 32rem;
