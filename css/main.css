@@ -159,3 +159,8 @@ footer{
     padding: 1.5rem;
     margin: 20px;
 }
+
+.card-body h1{
+    font-size: 18px;
+    text-transform: uppercase;
+}
