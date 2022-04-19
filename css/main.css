@@ -34,10 +34,8 @@ nav ul li{
     text-decoration: none;
 }
 .nav-menu:hover{
-    background-color: #4c4646 ;
-    transition: 0.2s;
-    box-shadow: 2px 2px black;
-    transform: scale(2);
+    background-color: rgb(76, 70, 70) ;
+    color: aliceblue;
 }
 #contenedor{
     display: grid;
@@ -111,12 +109,6 @@ footer{
         margin: 1rem;
         font-size: 16px;
     }
-    .nav-menu:hover{
-        background-color: #4c4646 ;
-        transition: 0.2s;
-        box-shadow: 2px 2px black;
-        transform: scale(2);
-    }
     .portada{
         height: 32rem;
         width: 100%;
@@ -158,4 +150,14 @@ footer{
     color: aliceblue;
     padding: 1.5rem;
     margin: 20px;
+}
+.color-nav{
+    background-color:rgb(60, 51, 51);
+}
+.color-menu{
+   background-color: rgb(61, 53, 53) ;
+}
+.centrar{
+    margin:auto;
+    display:block;
 }
