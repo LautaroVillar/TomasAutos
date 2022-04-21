@@ -1,0 +1,80 @@
+
+main{
+    grid-area: main; 
+    .referencias {
+        background-color:$color-principal;
+        height: 20px;
+        h2{
+            display: flex;
+            justify-content: center;
+            text-transform: uppercase;
+            font-size: 13px;
+            color: aliceblue;
+       }
+   }   
+}
+.portada{
+    height: 20rem;
+    width: 100%;
+}
+.section1{
+    grid-area: section1;
+}
+.section2{
+    grid-area: section2;
+}
+.section3{
+    grid-area: section3;
+}
+.section1, .section2, .section3{
+    padding-left: 140px;
+}
+.clientes{
+    width: 150px;
+    height: 200px;
+    margin: 20px;
+}
+#contenedor{
+    display: grid;
+    height: 80vh;
+    grid-template-areas: "main"
+                        "section1"
+                        "section2"
+                        "section3"  
+                        "footer";   
+}
+@media only screen and (min-width:1024px){
+    #contenedor{
+        display: grid;
+        height: 80vh;
+        grid-template-areas:"main main main"
+                            "section1 section2 section3"
+                            "footer footer footer";   
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    nav ul{
+        padding-right: 500px;
+    }
+    nav ul li{
+        margin: 1rem;
+        font-size: 16px;
+    }
+    .portada{
+        height: 32rem;
+        width: 100%;
+   }
+     main .referencias h2{
+    font-size: 18px;
+   }
+   .section1, .section2, .section3{
+    padding-left: 60px;
+}
+   .clientes{
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+   }
+}

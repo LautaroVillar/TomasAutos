@@ -1,163 +1,162 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-     font-family: 'Roboto', sans-serif;
-}
-.logo{
-    width: 50px;
-    height: 50px;
-}
-header{
-    width: 100%;
-    background-color:rgb(60, 51, 51) ;    
-}
-nav{
-   display: flex;
-   justify-content: space-between;  
-   align-items: center; 
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    padding-right: 200px;
-}
-nav ul li{
-    margin: 0.7rem;
-    text-transform: uppercase; 
-    font-size: 10px;
-}
-.nav-menu{
-    color: aliceblue;
-    text-decoration: none;
-}
-.nav-menu:hover{
-    background-color: rgb(76, 70, 70) ;
-    color: aliceblue;
-}
-#contenedor{
-    display: grid;
-    height: 80vh;
-    grid-template-areas: "main"
-                        "section1"
-                        "section2"
-                        "section3"  
-                        "footer";   
-}
-main{
-    grid-area: main;    
-}
- main .referencias {
-     background-color:rgb(60, 51, 51);
-     height: 20px;
-}
- main .referencias h2{
-     display: flex;
-     justify-content: center;
-     text-transform: uppercase;
-     font-size: 13px;
-     color: aliceblue;
-}
- .portada{
-     height: 20rem;
-     width: 100%;
-}
-.section1{
-    grid-area: section1;
-}
-.section2{
-    grid-area: section2;
-}
-.section3{
-    grid-area: section3;
-}
-.section1, .section2, .section3{
-    padding-left: 140px;
-}
-.clientes{
-    width: 150px;
-    height: 200px;
-    margin: 20px;
-}
-footer{
-    grid-area: footer;    
-}
-.footer{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(60, 51, 51);
-    color:aliceblue;
-}
-@media only screen and (min-width:600px){
-    #contenedor{
-        display: grid;
-        height: 80vh;
-        grid-template-areas:"main main main"
-                            "section1 section2 section3"
-                            "footer footer footer";   
-    }
-    .logo{
-        width: 100px;
-        height: 100px;
-    }
-    nav ul{
-        padding-right: 500px;
-    }
-    nav ul li{
-        margin: 1rem;
-        font-size: 16px;
-    }
-    .portada{
-        height: 32rem;
-        width: 100%;
-   }
-     main .referencias h2{
-    font-size: 18px;
-   }
-   .section1, .section2, .section3{
-    padding-left: 60px;
-}
-   .clientes{
-    width: 250px;
-    height: 300px;
-    margin: 20px;
-   }
-}
-/*--------NOSOTROS-------------*/
-.nosotros{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  width: 100%;
+  background-color: #3c3333; }
+  header nav {
     display: flex;
     justify-content: space-between;
-}
-.imagen-nosotros{
+    align-items: center; }
+    header nav ul {
+      display: flex;
+      list-style: none;
+      padding-right: 200px; }
+      header nav ul li {
+        margin: 0.7rem;
+        text-transform: uppercase;
+        font-size: 10px; }
+        header nav ul li .nav-menu {
+          color: aliceblue;
+          text-decoration: none; }
+          header nav ul li .nav-menu:hover {
+            background-color: #4c4646;
+            color: aliceblue; }
+
+.logo {
+  width: 50px;
+  height: 50px; }
+
+@media only screen and (min-width: 1024px) {
+  #contenedor {
+    display: grid;
+    height: 80vh;
+    grid-template-areas: "main main main" "section1 section2 section3" "footer footer footer"; }
+  .logo {
+    width: 100px;
+    height: 100px; }
+  ul {
+    margin-right: 100px; }
+    ul li {
+      padding-right: 50px; }
+      ul li .nav-menu {
+        margin: 0.2rem;
+        font-size: 16px; } }
+
+footer {
+  grid-area: footer; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #3c3333;
+  color: aliceblue; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+main {
+  grid-area: main; }
+  main .referencias {
+    background-color: #3c3333;
+    height: 20px; }
+    main .referencias h2 {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: aliceblue; }
+
+.portada {
+  height: 20rem;
+  width: 100%; }
+
+.section1 {
+  grid-area: section1; }
+
+.section2 {
+  grid-area: section2; }
+
+.section3 {
+  grid-area: section3; }
+
+.section1, .section2, .section3 {
+  padding-left: 140px; }
+
+.clientes {
+  width: 150px;
+  height: 200px;
+  margin: 20px; }
+
+#contenedor {
+  display: grid;
+  height: 80vh;
+  grid-template-areas: "main" "section1" "section2" "section3"   "footer"; }
+
+@media only screen and (min-width: 1024px) {
+  #contenedor {
+    display: grid;
+    height: 80vh;
+    grid-template-areas: "main main main" "section1 section2 section3" "footer footer footer"; }
+  .logo {
+    width: 100px;
+    height: 100px; }
+  nav ul {
+    padding-right: 500px; }
+  nav ul li {
+    margin: 1rem;
+    font-size: 16px; }
+  .portada {
+    height: 32rem;
+    width: 100%; }
+  main .referencias h2 {
+    font-size: 18px; }
+  .section1, .section2, .section3 {
+    padding-left: 60px; }
+  .clientes {
+    width: 250px;
+    height: 300px;
+    margin: 20px; } }
+
+.titulo-contacto {
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-left: 30px;
+  margin-top: 10px;
+  background-color: #3c3333;
+  color: aliceblue; }
+
+.formulario-contacto {
+  background-color: #3c3333;
+  color: aliceblue;
+  padding: 1.5rem;
+  margin: 20px; }
+
+.nosotros {
+  display: flex;
+  justify-content: space-between; }
+  .nosotros .imagen-nosotros {
     width: 200px;
     height: 200px;
     margin-right: 400px;
-    padding-bottom: 20px;
-}
-/*---------CONTACTO------------*/
-.titulo-contacto{
-    font-size: 13px;
-    text-transform: uppercase;
-    padding-left: 30px;
-    margin-top: 10px;
-    background-color:rgb(60, 51, 51) ;
-    color: aliceblue;
-}
-.formulario-contacto{
-    background-color:rgb(60, 51, 51);
-    color: aliceblue;
-    padding: 1.5rem;
-    margin: 20px;
-}
-.color-nav{
-    background-color:rgb(60, 51, 51);
-}
-.color-menu{
-   background-color: rgb(61, 53, 53) ;
-}
-.centrar{
-    margin:auto;
-    display:block;
-}
+    padding-bottom: 20px; }
+
+.color-nav {
+  background-color: #3c3333; }
+
+.color-menu {
+  background-color: #3d3535; }
+
+.centrar {
+  margin: auto;
+  display: block; }

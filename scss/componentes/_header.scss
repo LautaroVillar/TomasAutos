@@ -1,0 +1,57 @@
+@import "componentes/variables";
+header{
+    width: 100%;
+    background-color: $color-principal ;   
+    nav{
+        display: flex;
+        justify-content: space-between;  
+        align-items: center; 
+        ul{
+            display: flex;
+            list-style: none;
+            padding-right: 200px;
+            li{
+                margin: 0.7rem;
+                text-transform: uppercase; 
+                font-size: 10px;
+                .nav-menu{
+                    color: aliceblue;
+                    text-decoration: none;
+                    &:hover{
+                        background-color:rgb(76, 70, 70);
+                        color: aliceblue;
+                    }
+                }
+            }
+        }
+     }
+
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+@media only screen and (min-width:1024px){
+    #contenedor{
+        display: grid;
+        height: 80vh;
+        grid-template-areas:"main main main"
+                            "section1 section2 section3"
+                            "footer footer footer";   
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    ul{ 
+        margin-right: 100px;
+        li{
+            padding-right: 50px;
+            .nav-menu{
+                margin: 0.2rem;
+                font-size: 16px;
+            }
+        }  
+    }
+            
+} 
