@@ -1,7 +1,6 @@
 
 .nosotros{
-    display: flex;
-    justify-content: space-between;  
+    @include flex;
     .imagen-nosotros{
         width: 200px;
         height: 200px;

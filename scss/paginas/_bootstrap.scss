@@ -1,5 +1,5 @@
 .color-nav{
-    background-color:rgb(60, 51, 51);
+    background-color: map-get($map: $color-nav , $key: bg-nav );
 }
 .color-menu{
    background-color: rgb(61, 53, 53) ;

@@ -121,12 +121,13 @@ main {
     width: 100%; }
   main .referencias h2 {
     font-size: 18px; }
-  .section1, .section2, .section3 {
-    padding-left: 60px; }
   .clientes {
     width: 250px;
     height: 300px;
     margin: 20px; } }
+
+.section1, .section2, .section3 {
+  padding-left: 60px; }
 
 .titulo-contacto {
   font-size: 13px;

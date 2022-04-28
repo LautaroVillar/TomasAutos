@@ -69,12 +69,21 @@ main{
      main .referencias h2{
     font-size: 18px;
    }
-   .section1, .section2, .section3{
-    padding-left: 60px;
-}
    .clientes{
     width: 250px;
     height: 300px;
     margin: 20px;
    }
+}
+%posicion{
+    padding-left: 60px;
+}
+.section1{
+    @extend %posicion;
+}
+.section2{
+    @extend %posicion;
+}
+.section3{
+    @extend %posicion;
 }

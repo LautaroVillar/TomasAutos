@@ -1,0 +1,10 @@
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+}
+$color-nav: (
+    //key-valor
+    color-nav: aliceblue,
+    bg-nav: rgb(60, 51, 51),
+    border-nav: 1px solid red,
+);
