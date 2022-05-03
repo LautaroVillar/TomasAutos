@@ -7,4 +7,20 @@
 .centrar{
     margin:auto;
     display:block;
+    height: 250px;
 }
+@media only screen and (min-width:1024px){
+    #contenedor{
+        display: grid;
+        height: 80vh;
+        grid-template-areas:"main main main"
+                            "section1 section2 section3"
+                            "footer footer footer";   
+    }
+    .centrar{
+        height: 500px;
+    }
+    .referencia{
+        font-size: 40px;
+    }
+} 

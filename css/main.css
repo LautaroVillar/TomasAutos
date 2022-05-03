@@ -68,14 +68,13 @@ body {
 main {
   grid-area: main; }
   main .referencias {
-    background-color: #3c3333;
-    height: 20px; }
+    margin: 1rem;
+    padding: 1rem; }
     main .referencias h2 {
       display: flex;
       justify-content: center;
       text-transform: uppercase;
-      font-size: 13px;
-      color: aliceblue; }
+      font-size: 20px; }
 
 .portada {
   height: 20rem;
@@ -91,7 +90,8 @@ main {
   grid-area: section3; }
 
 .section1, .section2, .section3 {
-  padding-left: 140px; }
+  display: flex;
+  justify-content: center; }
 
 .clientes {
   width: 150px;
@@ -120,7 +120,7 @@ main {
     height: 32rem;
     width: 100%; }
   main .referencias h2 {
-    font-size: 18px; }
+    font-size: 30px; }
   .clientes {
     width: 250px;
     height: 300px;
@@ -129,13 +129,12 @@ main {
 .section1, .section2, .section3 {
   padding-left: 60px; }
 
+/*CONTACTO*/
 .titulo-contacto {
-  font-size: 13px;
+  font-size: 20px;
   text-transform: uppercase;
-  padding-left: 30px;
-  margin-top: 10px;
-  background-color: #3c3333;
-  color: aliceblue; }
+  margin-left: 2rem;
+  margin-top: 0.7rem; }
 
 .formulario-contacto {
   background-color: #3c3333;
@@ -143,6 +142,15 @@ main {
   padding: 1.5rem;
   margin: 20px; }
 
+@media only screen and (min-width: 1024px) {
+  #contenedor {
+    display: grid;
+    height: 80vh;
+    grid-template-areas: "main main main" "section1 section2 section3" "footer footer footer"; }
+  .titulo-contacto {
+    font-size: 30px; } }
+
+/*NOSOTROS*/
 .nosotros {
   display: flex;
   justify-content: space-between; }
@@ -152,6 +160,23 @@ main {
     margin-right: 400px;
     padding-bottom: 20px; }
 
+.nosotros .titulo-texto {
+  margin: 3rem; }
+
+.titulo {
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  text-transform: uppercase;
+  font-size: 20px; }
+
+@media only screen and (min-width: 1024px) {
+  #contenedor {
+    display: grid;
+    height: 80vh;
+    grid-template-areas: "main main main" "section1 section2 section3" "footer footer footer"; }
+  .titulo {
+    font-size: 30px; } }
+
 .color-nav {
   background-color: #3c3333; }
 
@@ -160,4 +185,15 @@ main {
 
 .centrar {
   margin: auto;
-  display: block; }
+  display: block;
+  height: 250px; }
+
+@media only screen and (min-width: 1024px) {
+  #contenedor {
+    display: grid;
+    height: 80vh;
+    grid-template-areas: "main main main" "section1 section2 section3" "footer footer footer"; }
+  .centrar {
+    height: 500px; }
+  .referencia {
+    font-size: 40px; } }

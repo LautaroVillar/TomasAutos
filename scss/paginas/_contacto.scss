@@ -1,11 +1,9 @@
-
+/*CONTACTO*/
 .titulo-contacto{
-    font-size: 13px;
+    font-size: 20px;
     text-transform: uppercase;
-    padding-left: 30px;
-    margin-top: 10px;
-    background-color:$color-principal ;
-    color: aliceblue;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
 }
 .formulario-contacto{
     background-color:$color-principal;
@@ -13,3 +11,15 @@
     padding: 1.5rem;
     margin: 20px;
 }
+@media only screen and (min-width:1024px){
+    #contenedor{
+        display: grid;
+        height: 80vh;
+        grid-template-areas:"main main main"
+                            "section1 section2 section3"
+                            "footer footer footer";   
+    }
+    .titulo-contacto{
+        font-size: 30px;
+    }         
+} 
