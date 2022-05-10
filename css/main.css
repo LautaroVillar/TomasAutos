@@ -1,36 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Roboto', sans-serif; }
-
 header {
   width: 100%;
-  background-color: #3c3333; }
+  height: 100%; }
   header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    width: 100%;
+    height: 100%; }
     header nav ul {
-      display: flex;
-      list-style: none;
-      padding-right: 200px; }
+      list-style: none; }
       header nav ul li {
-        margin: 0.7rem;
+        margin: 0.9rem;
+        padding: 0.5rem;
         text-transform: uppercase;
-        font-size: 10px; }
+        font-size: 13px; }
         header nav ul li .nav-menu {
           color: aliceblue;
           text-decoration: none; }
           header nav ul li .nav-menu:hover {
             background-color: #4c4646;
             color: aliceblue; }
-
-.logo {
-  width: 50px;
-  height: 50px; }
 
 @media only screen and (min-width: 1024px) {
   #contenedor {
@@ -40,13 +26,33 @@ header {
   .logo {
     width: 100px;
     height: 100px; }
-  ul {
-    margin-right: 100px; }
-    ul li {
-      padding-right: 50px; }
-      ul li .nav-menu {
-        margin: 0.2rem;
-        font-size: 16px; } }
+  header nav ul li {
+    margin: 0.9rem;
+    padding: 0.5rem; }
+    header nav ul li .nav-menu {
+      font-size: 16px; } }
+
+@media only screen and (min-width: 760px) {
+  #contenedor {
+    display: grid;
+    height: 80vh;
+    grid-template-areas: "main main main" "section1 section2 section3" "footer footer footer"; }
+  .logo {
+    width: 100px;
+    height: 100px; }
+  ul li {
+    margin: 0.9rem;
+    padding: 0.5rem; }
+    ul li .nav-menu {
+      font-size: 16px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
 
 footer {
   grid-area: footer; }
@@ -55,7 +61,8 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #3c3333;
-  color: aliceblue; }
+  color: aliceblue;
+  width: 100%; }
 
 * {
   margin: 0;
@@ -68,16 +75,21 @@ body {
 main {
   grid-area: main; }
   main .referencias {
-    margin: 1rem;
-    padding: 1rem; }
-    main .referencias h2 {
-      display: flex;
-      justify-content: center;
+    margin: 10px; }
+    main .referencias h1 {
+      text-align: center;
+      background: #cdc8c8;
+      box-shadow: 0px 0px 5px #762323;
+      width: 100%;
       text-transform: uppercase;
-      font-size: 20px; }
+      font-size: 20px;
+      padding: 1rem; }
+
+main h1 {
+  font-size: 20px; }
 
 .portada {
-  height: 20rem;
+  height: auto;
   width: 100%; }
 
 .section1 {
@@ -96,7 +108,15 @@ main {
 .clientes {
   width: 150px;
   height: 200px;
-  margin: 20px; }
+  margin: 10px; }
+
+.p-clientes {
+  align-items: center;
+  font-size: 13px; }
+
+.bg-autos {
+  background: rgba(107, 84, 84, 0.2);
+  box-shadow: 0px 0px 5px #762323; }
 
 #contenedor {
   display: grid;
@@ -107,40 +127,68 @@ main {
   #contenedor {
     display: grid;
     height: 80vh;
+    width: auto;
     grid-template-areas: "main main main" "section1 section2 section3" "footer footer footer"; }
   .logo {
     width: 100px;
     height: 100px; }
-  nav ul {
-    padding-right: 500px; }
-  nav ul li {
-    margin: 1rem;
-    font-size: 16px; }
+  header nav ul li {
+    margin: 0.9rem;
+    padding: 0.5rem; }
+    header nav ul li .nav-menu {
+      font-size: 16px; }
   .portada {
-    height: 32rem;
+    height: auto;
     width: 100%; }
-  main .referencias h2 {
+  main .referencias h1 {
+    font-size: 30px; }
+  main h1 {
     font-size: 30px; }
   .clientes {
     width: 250px;
     height: 300px;
-    margin: 20px; } }
+    margin: auto; }
+  .p-clientes {
+    align-items: center;
+    font-size: 16px; } }
 
 .section1, .section2, .section3 {
-  padding-left: 60px; }
+  align-items: center;
+  padding-left: 0px;
+  background: rgba(107, 84, 84, 0.2);
+  box-shadow: 0px 0px 5px #762323; }
 
 /*CONTACTO*/
 .titulo-contacto {
   font-size: 20px;
   text-transform: uppercase;
-  margin-left: 2rem;
-  margin-top: 0.7rem; }
+  text-align: center; }
 
-.formulario-contacto {
-  background-color: #3c3333;
+form {
+  background-color: rgba(47, 36, 36, 0.8);
   color: aliceblue;
   padding: 1.5rem;
-  margin: 20px; }
+  margin: 20px;
+  border-radius: 10px; }
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 12px; }
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%; }
+
+#button {
+  background: #c42727;
+  color: #fff; }
+
+#button:hover {
+  background-color: red;
+  cursor: pointer; }
 
 @media only screen and (min-width: 1024px) {
   #contenedor {
@@ -148,24 +196,44 @@ main {
     height: 80vh;
     grid-template-areas: "main main main" "section1 section2 section3" "footer footer footer"; }
   .titulo-contacto {
-    font-size: 30px; } }
+    font-size: 30px; }
+  input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px; }
+  textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%; } }
 
 /*NOSOTROS*/
+#contenedor {
+  display: grid;
+  height: 80vh;
+  grid-template-areas: "main" "section1" "section2" "section3"   "footer"; }
+
 .nosotros {
+  background: rgba(107, 84, 84, 0.2);
+  box-shadow: 0px 0px 5px #762323;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  justify-items: center; }
   .nosotros .imagen-nosotros {
     width: 200px;
     height: 200px;
-    margin-right: 400px;
-    padding-bottom: 20px; }
+    margin-top: 30px; }
 
 .nosotros .titulo-texto {
-  margin: 3rem; }
+  margin: 3rem;
+  text-align: center; }
 
 .titulo {
-  margin-left: 2rem;
-  margin-top: 0.7rem;
+  background: #cdc8c8;
+  box-shadow: 0px 0px 5px #762323;
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 1rem;
   text-transform: uppercase;
   font-size: 20px; }
 
@@ -175,7 +243,15 @@ main {
     height: 80vh;
     grid-template-areas: "main main main" "section1 section2 section3" "footer footer footer"; }
   .titulo {
-    font-size: 30px; } }
+    padding-left: 30px;
+    margin-top: 0.7rem;
+    padding-top: 1rem;
+    font-size: 30px; }
+  .nosotros .imagen-nosotros {
+    width: 600px;
+    height: 250px;
+    margin-right: 100px;
+    margin-bottom: 30px; } }
 
 .color-nav {
   background-color: #3c3333; }

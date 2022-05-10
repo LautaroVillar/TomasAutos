@@ -2,15 +2,34 @@
 .titulo-contacto{
     font-size: 20px;
     text-transform: uppercase;
-    margin-left: 2rem;
-    margin-top: 0.7rem;
+   text-align: center;
 }
-.formulario-contacto{
-    background-color:$color-principal;
+form{
+    background-color:rgba(47, 36, 36, 0.8);
     color: aliceblue;
     padding: 1.5rem;
     margin: 20px;
+    border-radius: 10px;
 }
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 12px;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+} 
+#button{
+    background: rgb(196, 39, 39);
+    color: #fff;
+}
+#button:hover {
+    background-color: red;
+ cursor: pointer;
+}    
 @media only screen and (min-width:1024px){
     #contenedor{
         display: grid;
@@ -21,5 +40,16 @@
     }
     .titulo-contacto{
         font-size: 30px;
-    }         
+    }
+    input, textarea{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        font-size: 17px;
+    }    
+    textarea{
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+    }    
 } 
